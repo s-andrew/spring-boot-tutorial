@@ -3,7 +3,6 @@ package com.tutorial.tutorial.Entities;
 
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -16,8 +15,12 @@ public class Person {
     @Id
     @GeneratedValue
     private Long id;
-    private String firstName;
-    private String secondName;
+
+    @Column(name = "FIRST_NAME")
+    private String firstname;
+
+    @Column(name = "SECOND_NAME")
+    private String secondname;
     private Date birthday;
 
     @OneToMany(mappedBy = "person")
@@ -34,20 +37,28 @@ public class Person {
         return id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getSecondName() {
-        return secondName;
+    public String getSecondname() {
+        return secondname;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setSecondname(String secondname) {
+        this.secondname = secondname;
+    }
+
+    public Set<Profession> getProfessions() {
+        return professions;
+    }
+
+    public void setProfessions(Set<Profession> professions) {
+        this.professions = professions;
     }
 
     public List<Phone> getPhones() {
