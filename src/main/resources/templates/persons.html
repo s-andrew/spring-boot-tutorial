@@ -1,0 +1,14 @@
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Persons</title>
+</head>
+<body>
+    <h1>Persons</h1>
+    <ul th:each="person : ${persons}">
+        <li><a th:href="${'/persons/ ' + person.id}" th:text="${person.firstname + ' ' + person.secondname}"></a></li>
+    </ul>
+</body>
+</html>

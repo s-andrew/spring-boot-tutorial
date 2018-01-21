@@ -1,0 +1,16 @@
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Person</title>
+</head>
+<body>
+    <h1 th:text="${person.firstname + ' ' + person.secondname}"></h1>
+    <p th:inline="text">Birdhday: [[${person.birthday}]]</p>
+    <h3>Phones</h3>
+    <ul th:each="phone : ${person.phones}">
+        <li th:text="${phone.number}"></li>
+    </ul>
+</body>
+</html>

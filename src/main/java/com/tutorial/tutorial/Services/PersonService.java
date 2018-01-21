@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Service
-public class DemoService {
+public class PersonService {
     @Autowired
     PersonRepository personRepository;
 
