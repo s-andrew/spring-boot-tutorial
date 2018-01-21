@@ -1,5 +1,4 @@
 # Spring Boot Tutorial
---------------------------
 Введени бла бла бла
 
 ##Step 1. Init
@@ -50,7 +49,7 @@ spring:
 
 (_Если ваша таблица называется не PERSONS, то далее вам везде нужно подставлять вместо Person название своей таблицы_)
 ###### Er диаграмма:
-[PERSONS ER](https://github.com/s-andrew/spring-boot-tutorial/blob/master/er_f_small.png)
+[PERSONS ER](https://github.com/s-andrew/spring-boot-tutorial/raw/master/er_f_small.png)
 ###### schema.sql:
 ```sql
 CREATE TABLE PERSONS(
@@ -120,11 +119,11 @@ public class TestController {
 Немного усложним структуру базы данных
 
 ###### Логическая ER диаграмма:
-[Логическая ER диаграмма](https://github.com/s-andrew/spring-boot-tutorial/blob/master/er_l_full.png)
+[Логическая ER диаграмма](https://github.com/s-andrew/spring-boot-tutorial/raw/master/er_l_full.png)
 
 
 ###### Физическа ER диаграмма:
-[Физическая ER диаграмма](https://github.com/s-andrew/spring-boot-tutorial/blob/master/er_f_full.png)
+[Физическая ER диаграмма](https://github.com/s-andrew/spring-boot-tutorial/raw/master/er_f_full.png)
 
 ###### schema.sql
 ```sql
